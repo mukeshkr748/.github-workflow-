@@ -1,0 +1,13 @@
+schedule.yml
+name: Schedule Demo
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "Running every midnight UTC"
